@@ -25,15 +25,20 @@ Existing client? Search for your profile. Only submit one field at a time please
 <br />
 <br />
 
-<form action="clientpage.php" method="post">
 
 
-    ID number <input type="text" name="idnumber" value=" " />
+    <form action="clientpage.php" method="post">
+
+    ID number <input type=NULL name="idnumber" value="" />
     <input type="submit" name ="submit" value ="Submit" /> <br />
-    E-mail Address <input type="text" name="email" value=" " />
-    <input type="submit" name ="submit" value ="Submit" />  <br />
-   <!-- Product name <input type="text" name="product_name" value=" " />
-    <input type="submit" name ="submit" value ="Submit" /> <br /> -->
+
+    <form action="clientpage.php" method="post">
+    E-mail Address<input type=NULL name="email" value="" />
+    <input type="submit" name ="submit" value ="Submit" /> <br />
+
+    <form action="clientpage.php" method="post">
+    Product name <input type=NULL name="product_name" value="" />
+    <input type="submit" name ="submit" value ="Submit" /> <br />
 
 
 

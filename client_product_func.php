@@ -254,20 +254,114 @@ function client_product ($uid)
 
                         echo "<br />" . "<br />" . "<a href=\"cancel.php?upname=$upname&uid=$uid\">" . "Cancel" . "</a>" . "<br />";
                         echo "<a href=\"change_package.php?upname=$upname&name=Linux Bronze&ptype=$product&uid=$uid\">" . "Change Package" . "</a>" . "<br />";
-                        echo "<a href=\"coza_update.php?upname=$upname&uid=$uid\">" . "co.za update" . "</a>";
-                        //if (!insert)
-                        //{
-                        //  die("failed: " . mysql_error() );
-                        //}
+
+                        $sql = "select upname from `cproduct` where upname like '%.co.za' ";
+                        $sqlquery = mysql_query($sql);
+                        if (!$sqlquery)
+                        {
+                            die("Database query failed: " . mysql_error());
+                        }
+
+                        while ($row3 = mysql_fetch_array ($sqlquery))
+                        {
+                           // $upn1 = $row3['upname'];
+
+                           //echo $upn1;
+                       //echo $upname;
+
+                        //    if (!$sqlquery)
+                         //   {
+                           //     die("Database query failed: " . mysql_error());
+                          //  }
+
+
+
+
+                        // if (!$sqlquery)
+
+
+
+                            //$upname_coza = $row3["upname"];
+
+                            if($upname==$row3['upname'])
+                            {
+                                echo "<a href=\"coza_update.php?upname=$upname&uid=$uid\">" . "co.za update" . "</a>";
+                                echo "<a href=\"http://co.za/cgi-bin/whois.sh?Domain=$upname&Enter=Enter\">"."Whois.co.za"."</a>";
+                            }
+
+                            
+
+
+                           // else
+                                //echo "<a href=\"http://enom.com/whois/Default.aspx?DomainName=$upname\">"."Whois.com"."</a>";
+
+                        }
+
+
+
                     }
 
-                    else
+                        else
                         echo "Cancelled: " . $row2["cdate"] . "<br />" ."<br />" ;
 
-                    echo "<br />";
 
 
-                     echo "<a href=\"http://co.za/cgi-bin/whois.sh?Domain=$upname&Enter=Enter\">"."Whois.co.za"."</a>";
+
+
+                            /*else
+
+                                //echo "<a href=\"coza_update.php?upname=$upname&uid=$uid\">" . "co.za update" . "</a>";
+                            {
+                                echo "<a href=\"coza_update.php?upname=$upname&uid=$uid\">" . "co.za update" . "</a>";
+                                echo "<a href=\"http://co.za/cgi-bin/whois.sh?Domain=$upname&Enter=Enter\">"."Whois.co.za"."</a>";
+                                echo $upname;
+
+                            }
+                        }
+                        echo "<br />";
+
+                   /* $sql = "select * from `cproduct` where `upname` like '%.co.za' ";
+                    $sqlquery = mysql_query($sql);
+                    if (!$sqlquery)
+                    {
+                        die("Database query failed: " . mysql_error());
+                    }
+
+                    while ($row2 = mysql_fetch_array ($sqlquery))
+
+                    {
+                        if($upname = $row2["upname"])
+                        {
+                            //echo "<a href=\"coza_update.php?upname=$upname&uid=$uid\">" . "co.za update" . "</a>";
+                            echo "<a href=\"http://co.za/cgi-bin/whois.sh?Domain=$upname&Enter=Enter\">"."Whois.co.za"."</a>";
+                        }
+
+                        else
+                            {
+                                echo "<a href=\"http://co.za/cgi-bin/whois.sh?Domain=$upname&Enter=Enter\">"."Whois.co.za"."</a>";
+                            }
+
+                    }
+
+
+                    /*  $sql = "select * from `cproduct` where `upname` like '%.co.za' ";
+                      $sqlquery = mysql_query($sql);
+                      if (!$sqlquery)
+                      {
+                          die("Database query failed: " . mysql_error());
+                      }
+
+                      while ($row2 = mysql_fetch_array ($sqlquery))
+
+                              {
+                                  if((!$row2["cdate"])
+                                      {
+                                          echo "<a href=\"coza_update.php?upname=$upname&uid=$uid\">" . "co.za update" . "</a>";
+                                          echo "<a href=\"http://co.za/cgi-bin/whois.sh?Domain=$upname&Enter=Enter\">"."Whois.co.za"."</a>";
+                                      }
+                              }*/
+
+                       // echo "<a href=\"http://co.za/cgi-bin/whois.sh?Domain=$upname&Enter=Enter\">"."Whois.co.za"."</a>";
 
 
                     //echo "end";
@@ -303,9 +397,10 @@ function client_product ($uid)
                     else
                         echo "<br />" . "Cancelled: " . $row2["cdate"];
 
+
                     echo "<br />";
 
-                    echo "<a href=\"http://co.za/cgi-bin/whois.sh?Domain=$upname&Enter=Enter\">"."Whois.co.za"."</a>";
+
 
 
                     //echo "end";

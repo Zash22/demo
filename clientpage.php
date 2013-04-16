@@ -39,34 +39,43 @@ Personal Details:
 
 <?php
 
-            if (isset($_POST['idnumber']))
+$_POST;
+
+            if ($_POST['idnumber'] != "")
                 {
                     $idnumber = $_POST['idnumber'];
-                    //echo $idnumber;
+                    echo "echo: " . $idnumber;
                 }
 
-                if (isset($_POST['email']))
+
+            elseif ($_POST['email'] != "")
                        {
                            $email = $_POST['email'];
-                           //echo $email;
+                           echo "echo: " . $email;
                        }
 
-                if (isset($_POST['product_name']))
+
+            elseif ($_POST['product_name'] != "")
                        {
                            $product_name = $_POST['product_name'];
-                           //echo $product_name;
+                           echo "echo: " . $product_name;
+
                        }
-
-
-                else //not working
+            else
                 echo "no value was entered";
+
+
+
+// else //not working
+
+
 
     ?>
 
 
 <?php
 
-               if ($idnumber > 0)
+            if ($idnumber > 0)
                         {
                             $field = "idnumber";
                             $var = $idnumber;
@@ -95,13 +104,13 @@ Personal Details:
 
 <?php
 
-        echo $field;
-        echo $var;
+   //     echo $field;
+  //      echo $var;
        // echo $uid;
 
-        require_once ("sql.php");
+  require_once ("sql.php");
 
-            client_detail ($field,$var);
+     client_detail ($field,$var);
          //   if(! client_detail ($field,$var))
            // {
             //    echo "fail";
