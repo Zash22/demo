@@ -1,24 +1,17 @@
 <?php
 
-require_once ("Database.php");
-Database::db();
-
-
 $_GET;
 $upname = $_GET['upname'];
-$uid = $_GET['uid'];
+$uid = $_GET ['uid'];
 
 
-     $sql = "UPDATE `cproduct` SET `cdate` = now() WHERE `upname` = '$upname' ";
-        $insert = mysql_query($sql);
+echo "Are you sure you wish to cancel? " . "<br />" . "<br />";
 
-        if (!$insert)
-            {
-                die("Unable to cancel: " . mysql_error());
-            }
+echo "<br />";
 
-        else
-            echo $upname . " is cancelled." . " <br />" . "<a href = \"client_product.php?uid=$uid\">" . "Return" . "</a>";
-
+echo "<a href=\"cancel_func.php?upname=$upname&uid=$uid\">" . "Continue" . "</a>" .
+     "<br />" . "<br />" .
+     "or" . "<br />" . "<br />" .
+     "<a href = \"client_product.php?uid=$uid\">" . "Do not cancel" . "</a>";
 
 ?>

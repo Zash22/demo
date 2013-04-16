@@ -2,14 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0379dff2-14e4-4ac2-86ec-49e4d1d934db" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cancel.php" afterPath="$PROJECT_DIR$/cancel.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/change_package.php" afterPath="$PROJECT_DIR$/change_package.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client_product_func.php" afterPath="$PROJECT_DIR$/client_product_func.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/edit_update.php" afterPath="$PROJECT_DIR$/edit_update.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/update.txt" afterPath="$PROJECT_DIR$/update.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mymojo.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="0379dff2-14e4-4ac2-86ec-49e4d1d934db" time="1366060822068" ignored="false" />
+    <file path="/Dummy.txt" changelist="0379dff2-14e4-4ac2-86ec-49e4d1d934db" time="1366063506608" ignored="false" />
     <file path="/change_package.php" changelist="0379dff2-14e4-4ac2-86ec-49e4d1d934db" time="1366060846051" ignored="false" />
-    <file path="/client_product_func.php" changelist="0379dff2-14e4-4ac2-86ec-49e4d1d934db" time="1366062705114" ignored="false" />
+    <file path="/client_product_func.php" changelist="0379dff2-14e4-4ac2-86ec-49e4d1d934db" time="1366068179424" ignored="false" />
+    <file path="/change_package_func.php" changelist="0379dff2-14e4-4ac2-86ec-49e4d1d934db" time="1366066127237" ignored="false" />
+    <file path="/cancel.php" changelist="0379dff2-14e4-4ac2-86ec-49e4d1d934db" time="1366067008131" ignored="false" />
+    <file path="/edit_update.php" changelist="0379dff2-14e4-4ac2-86ec-49e4d1d934db" time="1366069952813" ignored="false" />
+    <file path="/mail.php" changelist="0379dff2-14e4-4ac2-86ec-49e4d1d934db" time="1366070274226" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,19 +40,55 @@
       <file leaf-file-name="change_package.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/change_package.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="21" selection-start="174" selection-end="174" vertical-scroll-proportion="-6.25">
+            <state line="5" column="5" selection-start="22" selection-end="22" vertical-scroll-proportion="-3.125">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="client_product_func.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="change_package_func.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/change_package_func.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="30" selection-start="241" selection-end="241" vertical-scroll-proportion="-8.75">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cancel.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cancel.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="2" selection-start="372" selection-end="372" vertical-scroll-proportion="-10.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="client_product_func.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client_product_func.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="48" selection-start="654" selection-end="654" vertical-scroll-proportion="0.26732674">
+            <state line="283" column="51" selection-start="10103" selection-end="10103" vertical-scroll-proportion="-6.25">
               <folding>
-                <marker date="1366062796127" expanded="true" signature="17958:18007" placeholder="..." />
+                <marker date="1366068697515" expanded="true" signature="18318:18367" placeholder="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="edit_update.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/edit_update.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="73" column="0" selection-start="1167" selection-end="1167" vertical-scroll-proportion="-6.5833335">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mail.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mail.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="27" column="0" selection-start="369" selection-end="369" vertical-scroll-proportion="0.41836736">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -67,8 +111,12 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
+        <option value="$PROJECT_DIR$/change_package_func.php" />
         <option value="$PROJECT_DIR$/change_package.php" />
+        <option value="$PROJECT_DIR$/cancel.php" />
         <option value="$PROJECT_DIR$/client_product_func.php" />
+        <option value="$PROJECT_DIR$/edit_update.php" />
+        <option value="$PROJECT_DIR$/mail.php" />
       </list>
     </option>
   </component>
@@ -86,7 +134,7 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
@@ -178,24 +226,24 @@
     <frame x="-1" y="27" width="1368" height="742" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25457317" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -261,17 +309,61 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/change_package.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="21" selection-start="174" selection-end="174" vertical-scroll-proportion="-6.25">
+        <state line="13" column="21" selection-start="174" selection-end="174" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client_product_func.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="48" selection-start="654" selection-end="654" vertical-scroll-proportion="0.26732674">
+        <state line="36" column="28" selection-start="536" selection-end="536" vertical-scroll-proportion="0.0">
           <folding>
-            <marker date="1366062796127" expanded="true" signature="17958:18007" placeholder="..." />
+            <marker date="1366068697515" expanded="true" signature="18318:18367" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/change_package.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="5" selection-start="22" selection-end="22" vertical-scroll-proportion="-3.125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/change_package_func.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="30" selection-start="241" selection-end="241" vertical-scroll-proportion="-8.75">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cancel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="2" selection-start="372" selection-end="372" vertical-scroll-proportion="-10.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client_product_func.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="283" column="51" selection-start="10103" selection-end="10103" vertical-scroll-proportion="-6.25">
+          <folding>
+            <marker date="1366068697515" expanded="true" signature="18318:18367" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/edit_update.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="73" column="0" selection-start="1167" selection-end="1167" vertical-scroll-proportion="-6.5833335">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="0" selection-start="369" selection-end="369" vertical-scroll-proportion="0.41836736">
+          <folding />
         </state>
       </provider>
     </entry>

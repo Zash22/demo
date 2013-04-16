@@ -28,12 +28,12 @@ function client_product ($uid)
     {
 
 
-        echo "Product: " ;
+        //echo "Product: " ;
 
 
         global $product;
         $product = $row2["ptype"];
-        global $uid
+        global $uid;
         $uid = $row2["uid"];
 
         switch ($product)
@@ -50,8 +50,8 @@ function client_product ($uid)
 
                     if (!$row2["cdate"])
                         {
-                            echo "<a href=\"cancel.php?upname=$upname&uid=$uid\">" . "Cancel" . "</a>";
-                            echo "<a href=\"change_package.php?upname=$upname&name=ADSL Bronze&ptype=product&uid=$uid\">" . "Change Package" . "</a>" . "<br />";
+                            echo "<br />" . "<br />" . "<a href=\"cancel.php?upname=$upname&uid=$uid\">" . "Cancel" . "</a>" . "<br />";
+                            echo "<a href=\"change_package.php?upname=$upname&name=ADSL Bronze&ptype=$product&uid=$uid\">" . "Change Package" . "</a>" . "<br />";
 
                             //if (!insert)
                         //{
@@ -60,7 +60,7 @@ function client_product ($uid)
                         }
 
                     else
-                        echo "Cancelled: " . $row2["cdate"] . "<br />". "<br />";
+                        echo "<br />" . "Cancelled: " . $row2["cdate"] .  "<br />";
 
 
                     echo "<br />";
@@ -80,8 +80,8 @@ function client_product ($uid)
                     if (!$row2["cdate"])
                         {
 
-                            echo "<a href=\"cancel.php?upname=$upname&uid=$uid\">" . "Cancel" . "</a>";
-                            echo "<a href=\"change_package.php?upname=$upname&name=ADSL Silver&ptype=$ptype&uid=$uid\">" . "Change Package" . "</a>" . "<br />";
+                            echo "<br />" . "<br />" . "<a href=\"cancel.php?upname=$upname&uid=$uid\">" . "Cancel" . "</a>" . "<br />";
+                            echo "<a href=\"change_package.php?upname=$upname&name=ADSL Silver&ptype=$product&uid=$uid\">" . "Change Package" . "</a>" . "<br />";
                         //if (!insert)
                         //{
                         //  die("failed: " . mysql_error() );
@@ -112,8 +112,8 @@ function client_product ($uid)
 
                     if (!$row2["cdate"])
                         {
-                            echo "<a href=\"cancel.php?upname=$upname&uid=$uid\">" . "Cancel" . "</a>";
-                            echo "<a href=\"change_package.php?upname=$upname&name=ADSL Gold&ptype=$ptype&uid=$uid\">" . "Change Package" . "</a>" . "<br />";
+                            echo "<br />" . "<br />" . "<a href=\"cancel.php?upname=$upname&uid=$uid\">" . "Cancel" . "</a>" . "<br />";
+                            echo "<a href=\"change_package.php?upname=$upname&name=ADSL Gold&ptype=$product&uid=$uid\">" . "Change Package" . "</a>" . "<br />";
                         //if (!insert)
                         //{
                         //  die("failed: " . mysql_error() );
@@ -146,8 +146,8 @@ function client_product ($uid)
                     if (!$row2["cdate"])
                     {
 
-                        echo "<a href=\"cancel.php?upname=$upname&uid=$uid\">" . "Cancel" . "</a>";
-                        echo "<a href=\"change_package.php?upname=$upname&name=ADSL Uncapped 1&ptype=$ptype&uid=$uid\">" . "Change Package" . "</a>" . "<br />";
+                        echo "<br />" . "<br />" . "<a href=\"cancel.php?upname=$upname&uid=$uid\">" . "Cancel" . "</a>" . "<br />";
+                        echo "<a href=\"change_package.php?upname=$upname&name=ADSL Uncapped 1&ptype=$product&uid=$uid\">" . "Change Package" . "</a>" . "<br />";
 
 
                         //{
@@ -158,7 +158,7 @@ function client_product ($uid)
                     }
 
                     else
-                        echo "Cancelled: " . $row2["cdate"] . "<br />" . "<br />" ;
+                        echo "<br />" . "Cancelled: " . $row2["cdate"] . "<br />";
 
 
                     //echo "end";
@@ -180,8 +180,8 @@ function client_product ($uid)
 
                     if (!$row2["cdate"])
                         {
-                            echo "<a href=\"cancel.php?upname=$upname&uid=$uid\">" . "Cancel" . "</a>";
-                            echo "<a href=\"change_package.php?upname=$upname&name=ADSL Uncapped 2&ptype=$ptype&uid=$uid\">" . "Change Package" . "</a>" . "<br />";
+                            echo "<br />" . "<br />" . "<a href=\"cancel.php?upname=$upname&uid=$uid\">" . "Cancel" . "</a>" . "<br />";
+                            echo "<a href=\"change_package.php?upname=$upname&name=ADSL Uncapped 2&ptype=$product&uid=$uid\">" . "Change Package" . "</a>" . "<br />";
 
                             //if (!insert)
                         //{
@@ -190,7 +190,7 @@ function client_product ($uid)
                         }
 
                     else
-                        echo "Cancelled: " . $row2["cdate"] . "<br />" . "<br />" ;
+                        echo "<br />" . "Cancelled: " . $row2["cdate"] . "<br />";
 
 
 
@@ -213,11 +213,11 @@ function client_product ($uid)
                     if (!$row2["cdate"])
                         {
 
-                            echo "<a href=\"cancel.php?upname=$upname&uid=$uid\">" . "Cancel" . "</a>";
+                            echo "<br />" . "<br />" . "<a href=\"cancel.php?upname=$upname&uid=$uid\">" . "Cancel" . "</a>" . "<br />";
 
-                            echo "<br />";
 
-                            echo "<a href=\"change_package.php?upname=$upname&name=ADSL Uncapped 4&ptype=$ptype&uid=$uid\">" . "Change Package" . "</a>" . "<br />";
+
+                            echo "<a href=\"change_package.php?upname=$upname&name=ADSL Uncapped 4&ptype=$product&uid=$uid\">" . "Change Package" . "</a>" . "<br />";
 
 
 
@@ -252,8 +252,8 @@ function client_product ($uid)
                     if (!$row2["cdate"])
                     {
 
-                        echo "<a href=\"cancel.php?upname=$upname&uid=$uid\">" . "Cancel" . "</a>";
-                        echo "<a href=\"change_package.php?upname=$upname&name=Linux Bronze&ptype=$ptype&uid=$uid\">" . "Change Package" . "</a>" . "<br />";
+                        echo "<br />" . "<br />" . "<a href=\"cancel.php?upname=$upname&uid=$uid\">" . "Cancel" . "</a>" . "<br />";
+                        echo "<a href=\"change_package.php?upname=$upname&name=Linux Bronze&ptype=$product&uid=$uid\">" . "Change Package" . "</a>" . "<br />";
                         echo "<a href=\"coza_update.php?upname=$upname&uid=$uid\">" . "co.za update" . "</a>";
                         //if (!insert)
                         //{
@@ -263,6 +263,8 @@ function client_product ($uid)
 
                     else
                         echo "Cancelled: " . $row2["cdate"] . "<br />" ."<br />" ;
+
+                    echo "<br />";
 
 
                      echo "<a href=\"http://co.za/cgi-bin/whois.sh?Domain=$upname&Enter=Enter\">"."Whois.co.za"."</a>";
@@ -287,8 +289,8 @@ function client_product ($uid)
                     if (!$row2["cdate"])
                     {
 
-                        echo "<a href=\"cancel.php?upname=$upname&uid=$uid\">" . "Cancel" . "</a>";
-                        echo "<a href=\"change_package.php?upname=$upname&name=Linux Silver&ptype=$ptype&uid=$uid\">" . "Change Package" . "</a>" . "<br />";
+                        echo "<br />" . "<br />" . "<a href=\"cancel.php?upname=$upname&uid=$uid\">" . "Cancel" . "</a>" . "<br />";
+                        echo "<a href=\"change_package.php?upname=$upname&name=Linux Silver&ptype=$product&uid=$uid\">" . "Change Package" . "</a>" . "<br />";
                         echo "<a href=\"coza_update.php?upname=$upname&uid=$uid\">" . "co.za update" . "</a>";
 //if (!insert)               echo "<a href=\"coza_update.php?upname=$upname&uid=$uid\">" . "co.za update" . "</a>";
                         //{
@@ -299,7 +301,9 @@ function client_product ($uid)
                     }
 
                     else
-                        echo "Cancelled: " . $row2["cdate"];
+                        echo "<br />" . "Cancelled: " . $row2["cdate"];
+
+                    echo "<br />";
 
                     echo "<a href=\"http://co.za/cgi-bin/whois.sh?Domain=$upname&Enter=Enter\">"."Whois.co.za"."</a>";
 
@@ -322,8 +326,8 @@ function client_product ($uid)
                     if (!$row2["cdate"])
                     {
 
-                        echo "<a href=\"cancel.php?upname=$upname&uid=$uid\">" . "Cancel" . "</a>";
-                        echo "<a href=\"change_package.php?upname=$upname&name=Linux Gold&ptype=$ptype&uid=$uid\">" . "Change Package" . "</a>" . "<br />";
+                        echo "<br />" . "<br />" . "<a href=\"cancel.php?upname=$upname&uid=$uid\">" . "Cancel" . "</a>" . "<br />";
+                        echo "<a href=\"change_package.php?upname=$upname&name=Linux Gold&ptype=$product&uid=$uid\">" . "Change Package" . "</a>" . "<br />";
                         echo "<a href=\"coza_update.php?upname=$upname&uid=$uid\">" . "co.za update" . "</a>";
                         //if (!insert)
                         //{
@@ -336,7 +340,7 @@ function client_product ($uid)
                     else
                         echo "Cancelled: " . $row2["cdate"];
 
-                    echo "<br />";
+
                     echo "<br />";
 
 
@@ -363,8 +367,8 @@ function client_product ($uid)
                     if (!$row2["cdate"])
                     {
 
-                        echo "<a href=\"cancel.php?upname=$upname&uid=$uid\">" . "Cancel" . "</a>";
-                        echo "<a href=\"change_package.php?upname=$upname&name=Windows Bronze&ptype=$ptype&uid=$uid\">" . "Change Package" . "</a>" . "<br />";
+                        echo "<br />" . "<br />" . "<a href=\"cancel.php?upname=$upname&uid=$uid\">" . "Cancel" . "</a>" . "<br />";
+                        echo "<a href=\"change_package.php?upname=$upname&name=Windows Bronze&ptype=$product&uid=$uid\">" . "Change Package" . "</a>" . "<br />";
                         echo "<a href=\"coza_update.php?upname=$upname&uid=$uid\">" . "co.za update" . "</a>";
 
 
@@ -379,9 +383,9 @@ function client_product ($uid)
                     }
 
                     else
-                        echo "Cancelled: " . $row2["cdate"];
+                        echo "<br />" . "Cancelled: " . $row2["cdate"];
 
-                    echo "<br />";
+
                     echo "<br />";
 
 
@@ -407,8 +411,8 @@ function client_product ($uid)
                     if (!$row2["cdate"])
                     {
 
-                        echo "<a href=\"cancel.php?upname=$upname&uid=$uid\">" . "Cancel" . "</a>";
-                        echo "<a href=\"change_package.php?upname=$upname&name=Windows Silver&ptype=$ptype&uid=$uid\">" . "Change Package" . "</a>" . "<br />";
+                        echo "<br />" . "<br />" . "<a href=\"cancel.php?upname=$upname&uid=$uid\">" . "Cancel" . "</a>" . "<br />";
+                        echo "<a href=\"change_package.php?upname=$upname&name=Windows Silver&ptype=$product&uid=$uid\">" . "Change Package" . "</a>" . "<br />";
                         echo "<a href=\"coza_update.php?upname=$upname&uid=$uid\">" . "co.za update" . "</a>";
 
 //if (!insert)
@@ -421,9 +425,9 @@ function client_product ($uid)
                     }
 
                     else
-                        echo "Cancelled: " . $row2["cdate"];
+                        echo "<br />" . "Cancelled: " . $row2["cdate"];
 
-                    echo "<br />";
+
                     echo "<br />";
 
 
@@ -450,8 +454,8 @@ function client_product ($uid)
                     if (!$row2["cdate"])
                     {
 
-                        echo "<a href=\"cancel.php?upname=$upname&uid=$uid\">" . "Cancel" . "</a>";
-                        echo "<a href=\"change_package.php?upname=$upname&name=Windows Gold&ptype=$ptype&uid=$uid\">" . "Change Package" . "</a>" . "<br />";
+                        echo "<br />" . "<br />" . "<a href=\"cancel.php?upname=$upname&uid=$uid\">" . "Cancel" . "</a>" . "<br />";
+                        echo "<a href=\"change_package.php?upname=$upname&name=Windows Gold&ptype=$product&uid=$uid\">" . "Change Package" . "</a>" . "<br />";
                         echo "<a href=\"coza_update.php?upname=$upname&uid=$uid\">" . "co.za update" . "</a>";
 
 
@@ -468,9 +472,9 @@ function client_product ($uid)
 
 
                     else
-                        echo "Cancelled: " . $row2["cdate"];
+                        echo "<br />" . "Cancelled: " . $row2["cdate"];
 
-                    echo "<br />";
+
                     echo "<br />";
 
                         echo "<a href=\"http://co.za/cgi-bin/whois.sh?Domain=$upname&Enter=Enter\">"."Whois.co.za"."</a>";
@@ -520,7 +524,7 @@ function client_product ($uid)
                 }
 
             else
-                echo "Cancelled: " . $row2["cdate"];
+                echo "<br />" . "Cancelled: " . $row2["cdate"];
 
         //echo "end";
 

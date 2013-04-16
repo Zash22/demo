@@ -66,9 +66,15 @@ file_put_contents($filename2, $new_contents);
 
 fclose($fp);
 
-echo "<a href = mail.php?upname=$upname&uid=$uid>" . "Continue" . "</a>";
+$to = $upname;
+echo $to;
+
+echo "<a href = \"mail.php?uid=$uid&upname=$upname\" >". "Continue" . "</a>";
+
+
 echo $uid;
 echo $upname;
+
 
 
 
@@ -92,3 +98,7 @@ echo $upname;
 
 
 ?>
+
+<a href = "HI.php?uid=$uid&upname=<?php echo $upname; ?>" . "Continue" . "</a>"
+
+echo "<a href = HI.php?uid=$uid&upname=<>" . "Continue" . "</a>";

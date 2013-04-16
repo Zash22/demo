@@ -22,12 +22,12 @@ echo "Are you sure you want to change " . $upname . " from " . $name . " to: " .
     {
 
        echo
-        "<a href= \"sign_up.php?ptype=ab\">" . "ADSL Bronze" . "</a>" . "<br />" .
-        "<a href= \"sign_up.php?ptype=as\">" . "ADSL Silver" . "</a>" . "<br />" .
-        "<a href= \"sign_up.php?ptype=ag\">" . "ADSL Gold" . "</a>" . "<br />" .
-        "<a href= \"sign_up.php?ptype=au1\">" . "ADSL Uncapped 1" . "</a>" . "<br />" .
-        "<a href= \"sign_up.php?ptype=au2\">" . "ADSL Uncapped 2" . "</a>" . "<br />" .
-        "<a href= \"sign_up.php?ptype=au4\">" . "ADSL Uncapped 4" . "</a>" . "<br />";
+        "<a href= \"change_package_func.php?upname=$upname&uid=$uid&ptype=ab\">" . "ADSL Bronze" . "</a>" . "<br />" .
+        "<a href= \"change_package_func.php?upname=$upname&uid=$uid&ptype=as\">" . "ADSL Silver" . "</a>" . "<br />" .
+        "<a href= \"change_package_func.php?upname=$upname&uid=$uid&ptype=ag\">" . "ADSL Gold" . "</a>" . "<br />" .
+        "<a href= \"change_package_func.php?upname=$upname&uid=$uid&ptype=au1\">" . "ADSL Uncapped 1" . "</a>" . "<br />" .
+        "<a href= \"change_package_func.php?upname=$upname&uid=$uid&ptype=au2\">" . "ADSL Uncapped 2" . "</a>" . "<br />" .
+        "<a href= \"change_package_func.php?upname=$upname&uid=$uid&ptype=au4\">" . "ADSL Uncapped 4" . "</a>" . "<br />";
 
     }
 
@@ -35,22 +35,22 @@ echo "Are you sure you want to change " . $upname . " from " . $name . " to: " .
 if (($ptype = "lb") || ($ptype = "lb") || ($ptype = "lb"))
 {
     echo
-    "<a href= \"sign_up.php?ptype=lb\">" . "Linux Bronze" . "</a>" . "<br />" .
-    "<a href= \"sign_up.php?ptype=ls\">" . "Linux Silver" . "</a>" . "<br />" .
-    "<a href= \"sign_up.php?ptype=lg\">" . "Linux Gold" . "</a>" . "<br />";
+    "<a href= \"change_package_func.php?upname=$upname&uid=$uid&ptype=lb\">" . "Linux Bronze" . "</a>" . "<br />" .
+    "<a href= \"change_package_func.php?upname=$upname&uid=$uid&ptype=ls\">" . "Linux Silver" . "</a>" . "<br />" .
+    "<a href= \"change_package_func.php?upname=$upname&uid=$uid&ptype=lg\">" . "Linux Gold" . "</a>" . "<br />";
 }
 
 if (($ptype = "wb") ||($ptype = "ws") ||($ptype = "wg"))
 
 {
     echo
-    "<a href= \"sign_up.php?ptype=wb\">" . "Windows Bronze" . "</a>" . "<br />" .
-    "<a href= \"sign_up.php?ptype=wb\">" . "Windows Bronze" . "</a>" . "<br />" .
-    "<a href= \"sign_up.php?ptype=wb\">" . "Windows Bronze" . "</a>" . "<br />";
+    "<a href= \"change_package_func.php?upname=$upname&uid=$uid&ptype=wb\">" . "Windows Bronze" . "</a>" . "<br />" .
+    "<a href= \"change_package_func.php?upname=$upname&uid=$uid&ptype=wb\">" . "Windows Bronze" . "</a>" . "<br />" .
+    "<a href= \"change_package_func.php?upname=$upname&uid=$uid&ptype=wb\">" . "Windows Bronze" . "</a>" . "<br />";
 
 }*/
 
-echo "<a href = \"client_product.php?uid=$uid\">" . "Return" . "</a>";
+//echo "<a href = \"client_product.php?uid=$uid\">" . "Return" . "</a>";
 
 
 
@@ -63,96 +63,96 @@ switch ($ptype1)
     case "ab":
 
         echo
-            "<a href= \"sign_up.php?ptype=ab\">" . "ADSL Bronze" . "</a>" . "<br />" .
-            "<a href= \"sign_up.php?ptype=as\">" . "ADSL Silver" . "</a>" . "<br />" .
-            "<a href= \"sign_up.php?ptype=ag\">" . "ADSL Gold" . "</a>" . "<br />" .
-            "<a href= \"sign_up.php?ptype=au1\">" . "ADSL Uncapped 1" . "</a>" . "<br />" .
-            "<a href= \"sign_up.php?ptype=au2\">" . "ADSL Uncapped 2" . "</a>" . "<br />" .
-            "<a href= \"sign_up.php?ptype=au4\">" . "ADSL Uncapped 4" . "</a>" . "<br />";
+
+            "<a href= \"change_package_func.php?upname=$upname&uid=$uid&ptype=as\">" . "ADSL Silver" . "</a>" . "<br />" .
+            "<a href= \"change_package_func.php?upname=$upname&uid=$uid&ptype=ag\">" . "ADSL Gold" . "</a>" . "<br />" .
+            "<a href= \"change_package_func.php?upname=$upname&uid=$uid&ptype=au1\">" . "ADSL Uncapped 1" . "</a>" . "<br />" .
+            "<a href= \"change_package_func.php?upname=$upname&uid=$uid&ptype=au2\">" . "ADSL Uncapped 2" . "</a>" . "<br />" .
+            "<a href= \"change_package_func.php?upname=$upname&uid=$uid&ptype=au4\">" . "ADSL Uncapped 4" . "</a>" . "<br />";
         break;
 
     case "as":
 
         echo
-            "<a href= \"sign_up.php?ptype=ab\">" . "ADSL Bronze" . "</a>" . "<br />" .
-            "<a href= \"sign_up.php?ptype=as\">" . "ADSL Silver" . "</a>" . "<br />" .
-            "<a href= \"sign_up.php?ptype=ag\">" . "ADSL Gold" . "</a>" . "<br />" .
-            "<a href= \"sign_up.php?ptype=au1\">" . "ADSL Uncapped 1" . "</a>" . "<br />" .
-            "<a href= \"sign_up.php?ptype=au2\">" . "ADSL Uncapped 2" . "</a>" . "<br />" .
-            "<a href= \"sign_up.php?ptype=au4\">" . "ADSL Uncapped 4" . "</a>" . "<br />";
+            "<a href= \"change_package_func.php?upname=$upname&uid=$uid&ptype=ab\">" . "ADSL Bronze" . "</a>" . "<br />" .
+
+            "<a href= \"change_package_func.php?upname=$upname&uid=$uid&ptype=ag\">" . "ADSL Gold" . "</a>" . "<br />" .
+            "<a href= \"change_package_func.php?upname=$upname&uid=$uid&ptype=au1\">" . "ADSL Uncapped 1" . "</a>" . "<br />" .
+            "<a href= \"change_package_func.php?upname=$upname&uid=$uid&ptype=au2\">" . "ADSL Uncapped 2" . "</a>" . "<br />" .
+            "<a href= \"change_package_func.php?upname=$upname&uid=$uid&ptype=au4\">" . "ADSL Uncapped 4" . "</a>" . "<br />";
         break;
 
     case "ag":
 
         echo
-            "<a href= \"sign_up.php?ptype=ab\">" . "ADSL Bronze" . "</a>" . "<br />" .
-            "<a href= \"sign_up.php?ptype=as\">" . "ADSL Silver" . "</a>" . "<br />" .
-            "<a href= \"sign_up.php?ptype=ag\">" . "ADSL Gold" . "</a>" . "<br />" .
-            "<a href= \"sign_up.php?ptype=au1\">" . "ADSL Uncapped 1" . "</a>" . "<br />" .
-            "<a href= \"sign_up.php?ptype=au2\">" . "ADSL Uncapped 2" . "</a>" . "<br />" .
-            "<a href= \"sign_up.php?ptype=au4\">" . "ADSL Uncapped 4" . "</a>" . "<br />";
+            "<a href= \"change_package_func.php?upname=$upname&uid=$uid&ptype=ab\">" . "ADSL Bronze" . "</a>" . "<br />" .
+            "<a href= \"change_package_func.php?upname=$upname&uid=$uid&ptype=as\">" . "ADSL Silver" . "</a>" . "<br />" .
+
+            "<a href= \"change_package_func.php?upname=$upname&uid=$uid&ptype=au1\">" . "ADSL Uncapped 1" . "</a>" . "<br />" .
+            "<a href= \"change_package_func.php?upname=$upname&uid=$uid&ptype=au2\">" . "ADSL Uncapped 2" . "</a>" . "<br />" .
+            "<a href= \"change_package_func.php?upname=$upname&uid=$uid&ptype=au4\">" . "ADSL Uncapped 4" . "</a>" . "<br />";
         break;
 
     case "au1":
 
         echo
-            "<a href= \"sign_up.php?ptype=ab\">" . "ADSL Bronze" . "</a>" . "<br />" .
-            "<a href= \"sign_up.php?ptype=as\">" . "ADSL Silver" . "</a>" . "<br />" .
-            "<a href= \"sign_up.php?ptype=ag\">" . "ADSL Gold" . "</a>" . "<br />" .
-            "<a href= \"sign_up.php?ptype=au1\">" . "ADSL Uncapped 1" . "</a>" . "<br />" .
-            "<a href= \"sign_up.php?ptype=au2\">" . "ADSL Uncapped 2" . "</a>" . "<br />" .
-            "<a href= \"sign_up.php?ptype=au4\">" . "ADSL Uncapped 4" . "</a>" . "<br />";
+            "<a href= \"change_package_func.php?upname=$upname&uid=$uid&ptype=ab\">" . "ADSL Bronze" . "</a>" . "<br />" .
+            "<a href= \"change_package_func.php?upname=$upname&uid=$uid&ptype=as\">" . "ADSL Silver" . "</a>" . "<br />" .
+            "<a href= \"change_package_func.php?upname=$upname&uid=$uid&ptype=ag\">" . "ADSL Gold" . "</a>" . "<br />" .
+
+            "<a href= \"change_package_func.php?upname=$upname&uid=$uid&ptype=au2\">" . "ADSL Uncapped 2" . "</a>" . "<br />" .
+            "<a href= \"change_package_func.php?upname=$upname&uid=$uid&ptype=au4\">" . "ADSL Uncapped 4" . "</a>" . "<br />";
 
     case "au2":
 
         echo
-            "<a href= \"sign_up.php?ptype=ab\">" . "ADSL Bronze" . "</a>" . "<br />" .
-            "<a href= \"sign_up.php?ptype=as\">" . "ADSL Silver" . "</a>" . "<br />" .
-            "<a href= \"sign_up.php?ptype=ag\">" . "ADSL Gold" . "</a>" . "<br />" .
-            "<a href= \"sign_up.php?ptype=au1\">" . "ADSL Uncapped 1" . "</a>" . "<br />" .
-            "<a href= \"sign_up.php?ptype=au2\">" . "ADSL Uncapped 2" . "</a>" . "<br />" .
-            "<a href= \"sign_up.php?ptype=au4\">" . "ADSL Uncapped 4" . "</a>" . "<br />";
+            "<a href= \"change_package_func.php?upname=$upname&uid=$uid&ptype=ab\">" . "ADSL Bronze" . "</a>" . "<br />" .
+            "<a href= \"change_package_func.php?upname=$upname&uid=$uid&ptype=as\">" . "ADSL Silver" . "</a>" . "<br />" .
+            "<a href= \"change_package_func.php?upname=$upname&uid=$uid&ptype=ag\">" . "ADSL Gold" . "</a>" . "<br />" .
+            "<a href= \"change_package_func.php?upname=$upname&uid=$uid&ptype=au1\">" . "ADSL Uncapped 1" . "</a>" . "<br />" .
+
+            "<a href= \"change_package_func.php?upname=$upname&uid=$uid&ptype=au4\">" . "ADSL Uncapped 4" . "</a>" . "<br />";
         break;
 
     case "au4":
 
         echo
-            "<a href= \"sign_up.php?ptype=ab\">" . "ADSL Bronze" . "</a>" . "<br />" .
-            "<a href= \"sign_up.php?ptype=as\">" . "ADSL Silver" . "</a>" . "<br />" .
-            "<a href= \"sign_up.php?ptype=ag\">" . "ADSL Gold" . "</a>" . "<br />" .
-            "<a href= \"sign_up.php?ptype=au1\">" . "ADSL Uncapped 1" . "</a>" . "<br />" .
-            "<a href= \"sign_up.php?ptype=au2\">" . "ADSL Uncapped 2" . "</a>" . "<br />" .
-            "<a href= \"sign_up.php?ptype=au4\">" . "ADSL Uncapped 4" . "</a>" . "<br />";
+            "<a href= \"change_package_func.php?upname=$upname&uid=$uid&ptype=ab\">" . "ADSL Bronze" . "</a>" . "<br />" .
+            "<a href= \"change_package_func.php?upname=$upname&uid=$uid&ptype=as\">" . "ADSL Silver" . "</a>" . "<br />" .
+            "<a href= \"change_package_func.php?upname=$upname&uid=$uid&ptype=ag\">" . "ADSL Gold" . "</a>" . "<br />" .
+            "<a href= \"change_package_func.php?upname=$upname&uid=$uid&ptype=au1\">" . "ADSL Uncapped 1" . "</a>" . "<br />" .
+            "<a href= \"change_package_func.php?upname=$upname&uid=$uid&ptype=au2\">" . "ADSL Uncapped 2" . "</a>" . "<br />" ;
+
         break;
 
     case "lb":
 
         echo
-            "<a href= \"sign_up.php?ptype=lb\">" . "Linux Bronze" . "</a>" . "<br />" .
-            "<a href= \"sign_up.php?ptype=ls\">" . "Linux Silver" . "</a>" . "<br />" .
-            "<a href= \"sign_up.php?ptype=lg\">" . "Linux Gold" . "</a>" . "<br />";
+
+            "<a href= \"change_package_func.php?upname=$upname&uid=$uid&ptype=ls\">" . "Linux Silver" . "</a>" . "<br />" .
+            "<a href= \"change_package_func.php?upname=$upname&uid=$uid&ptype=lg\">" . "Linux Gold" . "</a>" . "<br />";
         break;
 
     case "ls":
         echo
-            "<a href= \"sign_up.php?ptype=lb\">" . "Linux Bronze" . "</a>" . "<br />" .
-            "<a href= \"sign_up.php?ptype=ls\">" . "Linux Silver" . "</a>" . "<br />" .
-            "<a href= \"sign_up.php?ptype=lg\">" . "Linux Gold" . "</a>" . "<br />";
+            "<a href= \"change_package_func.php?upname=$upname&uid=$uid&ptype=lb\">" . "Linux Bronze" . "</a>" . "<br />" .
+
+            "<a href= \"change_package_func.php?upname=$upname&uid=$uid&ptype=lg\">" . "Linux Gold" . "</a>" . "<br />";
         break;
 
     case "lg":
         echo
-            "<a href= \"sign_up.php?ptype=lb\">" . "Linux Bronze" . "</a>" . "<br />" .
-            "<a href= \"sign_up.php?ptype=ls\">" . "Linux Silver" . "</a>" . "<br />" .
-            "<a href= \"sign_up.php?ptype=lg\">" . "Linux Gold" . "</a>" . "<br />";
+            "<a href= \"change_package_func.php?upname=$upname&uid=$uid&ptype=lb\">" . "Linux Bronze" . "</a>" . "<br />" .
+            "<a href= \"change_package_func.php?upname=$upname&uid=$uid&ptype=ls\">" . "Linux Silver" . "</a>" . "<br />" ;
+
         break;
 
     case "wb":
     {
         echo
-            "<a href= \"sign_up.php?ptype=wb\">" . "Windows Bronze" . "</a>" . "<br />" .
-            "<a href= \"sign_up.php?ptype=wb\">" . "Windows Bronze" . "</a>" . "<br />" .
-            "<a href= \"sign_up.php?ptype=wb\">" . "Windows Bronze" . "</a>" . "<br />";
+
+            "<a href= \"change_package_func.php?upname=$upname&uid=$uid&ptype=ws\">" . "Windows Silver" . "</a>" . "<br />" .
+            "<a href= \"change_package_func.php?upname=$upname&uid=$uid&ptype=w\">" . "Windows Gold" . "</a>" . "<br />";
         break;
 
     }
@@ -161,9 +161,9 @@ switch ($ptype1)
     case "ws":
     {
         echo
-            "<a href= \"sign_up.php?ptype=wb\">" . "Windows Bronze" . "</a>" . "<br />" .
-            "<a href= \"sign_up.php?ptype=wb\">" . "Windows Bronze" . "</a>" . "<br />" .
-            "<a href= \"sign_up.php?ptype=wb\">" . "Windows Bronze" . "</a>" . "<br />";
+            "<a href= \"change_package_func.php?upname=$upname&uid=$uid&ptype=wb\">" . "Windows Bronze" . "</a>" . "<br />" .
+
+            "<a href= \"change_package_func.php?upname=$upname&uid=$uid&ptype=w\">" . "Windows Gold" . "</a>" . "<br />";
         break;
 
     }
@@ -171,9 +171,9 @@ switch ($ptype1)
     case "wg":
     {
         echo
-            "<a href= \"sign_up.php?ptype=wb\">" . "Windows Bronze" . "</a>" . "<br />" .
-            "<a href= \"sign_up.php?ptype=wb\">" . "Windows Bronze" . "</a>" . "<br />" .
-            "<a href= \"sign_up.php?ptype=wb\">" . "Windows Bronze" . "</a>" . "<br />";
+            "<a href= \"change_package_func.php?upname=$upname&uid=$uid&ptype=wb\">" . "Windows Bronze" . "</a>" . "<br />" .
+            "<a href= \"change_package_func.php?upname=$upname&uid=$uid&ptype=ws\">" . "Windows Silver" . "</a>" . "<br />" ;
+
         break;
 
     }
@@ -182,7 +182,7 @@ switch ($ptype1)
         break;
 }
 
-echo "<a href = \"client_product.php?uid=$uid\">" . "Return" . "</a>";
+echo "<a href = \"client_product.php?uid=$uid\">" . "Cancel change" . "</a>";
 
 
 

@@ -61,7 +61,7 @@ to 30 characters.
 The Action field specifies whether this is a 'N'ew application, an
 'U'pdate or a 'D'eletion.
 
-1a. Complete domain name:  55.co.za
+1a. Complete domain name: 1test4.com
 1b. Action - [N]ew, [U]pdate, or [D]elete : U
 
 
@@ -90,9 +90,9 @@ Numbers can have an optional extension part - ie +27.113140077x200)
 
 2i. Invoice Addr: PO BOX 29233, Sandringham, 2131
 
-2j. Registrant Phone No.: +27.55
+2j. Registrant Phone No.: +27.1111111111
 2k. Registrant Fax No.  :
-2l. Registrant e-mail   : 55
+2l. Registrant e-mail   : email1@zash.co.za
 
 2n. VAT No. for 2f : 4950211534
 
